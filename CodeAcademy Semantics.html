@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeAcademy HTML Semantics</title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <header> <!-- Top of the page, may include a logo, navigational links, a search bar, etc. -->
+            <h1>Navigational Links</h1>
+            <nav> <!-- Navigational links -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main> <!-- Main content of page, bewtween header/nav and footer -->
+            <h1>Dogs</h1>
+            <section> <!-- Part of content with same theme -->
+                <article> <!-- Content that makes sense on its own -->
+                    <h2>Facts About Dogs</h2>
+                    <p>
+                        Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+                    </p>
+                </article>
+                <aside> <!-- Used to mark additional information that can enhance another element but isn't required to understand mainn content. May be a bibliography, endontes, comments, pull quotes, editorial sidebars, additional info, etc. -->
+                    <p>
+                        A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were away from their owners the longest showed the greatest amount of affection!
+                    </p>
+                </aside>
+            </section>
+
+            <figure> <!-- Used to encapsulate media (image, diagram, code snippet, etc.) -->
+                <img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg" width="300" height="350" alt="A cute dog."/>
+                <figcaption>A cute dog.</figcaption> <!-- Adds a caption to the image. Stays connected to image if figure element is moved -->
+            </figure>
+
+            <audio controls>
+                <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3"/>
+            </audio>
+
+            <video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" width="720" height="480" controls>Video not supported.</video>
+
+            <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif"/>
+        </main>
+
+        <hr/>
+
+        <footer> <!-- Footer content, bottom of page, may include contact info, copyright info, terms of use, site map, reference to top of page links, etc. -->
+            <em>Contact me: contact@email.com</em><br/>
+            <em>Find me: @socialmedia</em>
+        </footer>
+    </body>
+</html>

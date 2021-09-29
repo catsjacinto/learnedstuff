@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>HTML Tables and Forms</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <h1>TABLE</h1>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>heading 1</th>
+                    <th>heading 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>col 1</td>
+                    <td>col 2</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Colspan 2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Rowspan</td>
+                    <td>Up</td>
+                </tr>
+                <tr>
+                    <td>Down</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <br/>
+
+        <h1>FORMS</h1>
+        <h2>CREATING A BURGER</h2>
+        <form action="/submission.html" method="POST">
+            <section class="protein"> <!-- Text form -->
+                <label for="patty">What type of protein would you like?</label>
+                <input type="text" name="patty" id="patty"/>
+            </section>
+
+            <hr/>
+
+            <section class="patties"> <!-- Number form -->
+                <label for="patties">How many patties would you like?</label>
+                <input type="number" name="amount" id="amount" step="1"/>
+            </section>
+
+            <hr/>
+
+            <section class="cooked"> <!-- Range form -->
+                <label for="doneness">How do you want your patty cooked?</label>
+                <br>
+                <span>Rare</span>
+                <input type="range" name="doneness" id="doneness" min="1" max="5" step="1"/> <!-- The higher the step number, the less smooth the slide is.-->
+                <span>Well-Done</span>
+            </section>
+
+            <hr/>
+
+            <section class="toppings"> <!-- Checkbox form -->
+                <p>What toppings would you like?</p>
+                <input type="checkbox" name="topping" id="lettuce" value="lettuce" checked/>
+                <label for="lettuce">Lettuce</label>
+                
+                <input type="checkbox" name="topping" id="tomato" value="tomato"/>
+                <label for="tomato">Tomato</label>
+                
+                <input type="checkbox" name="topping" id="onion" value="onion"/>
+                <label for="onion">Onion</label>
+            </section>
+
+            <hr/>
+
+            <section class="cheese"> <!-- Radio button form -->
+                <p>Would you like to add cheese?</p>
+                <input type="radio" name="cheese" id="yes" value="yes" checked/>
+                <label for="yes">Yes</label>
+                
+                <input type="radio" name="cheese" id="no" value="no"/>
+                <label for="no">No</label>
+            </section>
+
+            <hr/>
+
+            <section class="bun-type"> <!-- Dropdown menu -->
+                <label for="bun">What type of bunn would you like?</label>
+                <select name="bun" id="bun">
+                    <option value="sesame">Sesame</option>
+                    <option value="potatoe">Potatoe</option>
+                    <option value="Pretzel">Pretzel</option>
+                </select>
+            </section>
+
+            <hr/>
+
+            <section class="sauce-selection"> <!--Datalist input form-->
+                <label for="sauce">What type of sauce would you like?</label>
+                <input type="text" list="sauces" id="sauce" name="sauce"/>
+                <datalist id="sauce">
+                    <option value="ketchup"></option>
+                    <option value="mayo"></option>
+                    <option value="mustard"></option>
+                </datalist>
+            </section>
+
+            <hr/>
+
+            <section class="extra-info"> <!-- Textarea form -->
+                <label for="extra">Anything else you want to add?</label>
+                <br/>
+                <textarea id="extra" name="extra" rows="3" cols="40">Be creative!</textarea>
+            </section>
+            
+            <hr/>
+
+            <section class="submission">
+                <input type="submit" value="Place order"/>
+            </section>
+        </form>
+
+        <br/>
+        <hr/>
+
+        <h2>HTML FORM VALIDATION</h2> <!-- Required attribute + min and max input value -->
+        <form action="check.html" method="GET">
+            <label for="guess">Enter a number between 1-10:</label>
+            <br>
+            <input type="number" name="guess" id="guess" min="1" max="10" required/>
+            <br>
+            <input type="submit" value="Submit"/>
+        </form>
+
+        <br/>
+
+        <h2>CREATING A LOGIN FORM</h2>
+        <form action="/login.html" method="POST"> <!-- Password form, Min and max length of characters in text-field -->
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" minlength="3" maxlength="15" required/>
+                <br/>
+                <label for="user-pw">Password:</label>
+                <input type="password" name="user-pw" id="user-pw" minlength="8" maxlength="15" required/>
+                <br/>
+                <input type="submit" value="Sign in"/>
+        </form>
+
+        <br/>
+
+        <h2>MATCHING A PATTERN</h2> <!-- Pattern attribute, regular expression "regex" -->
+        <form>
+            <label for="nickname">Choose a nickname:</label>
+            <input type="text" id="nickname" name="nickname" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+"/> <!-- Nickname only accepts letters (capslock or not) and numbers -->
+        </form>
+    </body>
+
+    <br/>
+    <hr/>
+    <br/>
+
+    <footer>
+        FOOTER
+    </footer>
+</html>

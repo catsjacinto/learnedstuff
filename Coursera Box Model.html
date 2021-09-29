@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0; 
+                background-color: lightgray;
+                /* box-sizing: border-box; not inherited, so won't work */
+            }
+            
+            * {
+            box-sizing: border-box;
+
+            /* Override box-sizing for all elements in document. */
+            }
+
+            p {
+            background-color: lightblue;
+            width: 410px;
+            border: 5px solid black;
+            padding: 50px;
+            margin: 20px;
+            box-sizing: border-box;
+            }
+
+            div {
+            background-color: lightpink;
+            width: 300px;
+            height: 50px;
+            border: 5px solid black;
+            padding: 50px;
+            margin: 20px;
+            box-sizing: content-box;
+            overflow: auto; /* Addresses height shorter than content */
+            
+            /* width = 300 (width) + 5+5 (l&r border) + 50+50 (l&r padding) = 410px 
+            
+            If overridden by * selector, change width from 300 to 430. */
+            }
+            
+            h1 {
+                margin-bottom: 30px;
+
+                /* p margin is 20px all around, so the distance between the two is 30px, because it is the larger margin. */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Demonstrating the Box Model</h1>
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+        <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+    </body>
+</html>

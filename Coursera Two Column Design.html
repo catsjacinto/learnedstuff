@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Two Column Design</title>
+        <style>
+            * {
+                box-sizing: border-box; /* Now the border is included in the box width, so they fit side by side. */
+            }
+            div {
+                /* background-color: #00FFFF; */
+            }
+
+            p {
+                width: 50%; /* The div is a block element that wants to fill the entire width of containing element (body or browser), so 50% width says we want the box's witdth to be 50% of that space. */
+                /* border: 1px solid black; */ /* This breaks the two column scheme, cause there isn't enough space for both in the same line. When elements can't fit on the same line, they float to the next line. */
+                float: left;
+                padding: 10px;
+            }
+
+            /* This way, columns are displayed in two columns, side-by-side, and flexible as we adjust the display size. */
+
+            #p1 {
+                /* background-color: #A52A2A; */
+            }
+
+            #p2 {
+                /* background-color: #DEB887; */
+            }
+
+            section {
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Two Column Design</h1>
+
+        <div>
+            <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+            <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+            <section>This is regular content continuing after the the paragraph boxes.</section>
+        </div>
+
+
+    </body>
+</html>
