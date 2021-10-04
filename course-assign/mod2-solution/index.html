@@ -6,116 +6,29 @@
         <meta name="viewport" content="width=device-width" initial-scale="1"/>
         <title>Coursera Mod2-solution</title>
         <link rel="stylesheet" href="css/styles.css"/>
-
-        <style>
-            /* BASE STYLES */
-            * {
-                box-sizing: border-box;
-                font-family: 'Courier New', Courier, monospace;
-            }
-
-            h1 {
-                margin-bottom: 15px;
-                font-size: 175%;
-                text-align: center;
-            }
-
-            section {
-                position: relative;
-                border: 1px solid black;
-                background-color: rgb(204, 204, 204);
-                height: 200px;
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            p.title {
-                border: 1px solid black;
-                position: absolute;
-                margin: 0px;
-                top: 0px;
-                right: 0%;
-                height: 25px;
-                width: 100px;
-                text-align: center;
-                font-size: 125%;
-                font-weight: bold;
-            }
-
-            p#html {
-                background-color: pink;
-            }
-
-            p#css {
-                background-color: lightblue;
-            }
-
-            p#js {
-                background-color: palegoldenrod;
-            }
-
-            p.info {
-                position: absolute;
-                margin: 0;
-                padding: 35px;
-                text-align: justify;
-            }
-
-            .row {
-                width: 100%;
-            }
-
-            /* DESKTOP VIEW */
-            @media (min-width: 992px) {
-                .col-lg-4 {
-                    float: left;
-                    border: 1px solid rgb(204, 204, 204);
-                }
-
-                .col-lg-4 {
-                    width: 33.33%;
-                }
-            }
-
-            /* TABLET VIEW */
-            @media (min-width: 768px) and (max-width: 991px) {
-                .col-md-6, .col-md-12 {
-                    float: left;
-                    border: 1px solid rgb(204, 204, 204);
-                }
-
-                .col-md-6 {
-                    width: 50%;
-                }
-
-                .col-md-12 {
-                    width: 100%;
-                }
-            }
-        </style>
     </head>
+
     <body>
         <h1>Web Development</h1>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <section>
-                    <p class="title" id="html">HTML</p>
-                    <p class="info">HTML (HyperText Markup Language) provides the structure for the webpage content. It's what tells this page to have a heading, three sections with content, each one with a section title.</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <section id="html-section">
+                    <p class="title" id="html-title">HTML</p>
+                    <p class="info" id="html-main">HTML (HyperText Markup Language) provides the structure for the webpage content. It's what tells this page to have a heading, three sections with content, each one with a section title.</p>
                 </section>
             </div>
                 
-            <div class="col-lg-4 col-md-6">
-                <section>
-                    <p class="title" id="css">CSS</p>
-                    <p class="info">CSS (Cascading StyleSheet) provides the styling, making it visually appealing. It's what allows us to have three grey boxes for the section information and three individually colored ones for the section titles.</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <section id="css-section">
+                    <p class="title" id="css-title">CSS</p>
+                    <p class="info" id="css-main">CSS (Cascading StyleSheet) provides the styling, making it visually appealing. It's what allows us to have three grey boxes for the section information and three individually colored ones for the section titles.</p>
                 </section>
             </div>
 
-            <div class="col-lg-4 col-md-12">
-                <section>
-                    <p class="title" id="js">JS</p>
-                    <p class="info">JS (JavaScript) deals with behaviour, functionality and interactivity, for example: what happens when you click something.</p>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <section id="js-section">
+                    <p class="title" id="js-title">JS</p>
+                    <p class="info" id="js-main">JS (JavaScript) deals with behaviour, functionality and interactivity, for example: what happens when you click something.</p>
                 </section>
             </div>
         </div>
