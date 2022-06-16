@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="spreadsheet" href="style.css"/>
+        <title>FCCC Title</title>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Title</h1>
+            <p id="description">Description</p>
+        </header>
+        <main>
+            <form id="survey-form">
+
+                <!-- name email number -->
+                <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="jo doe" required />
+                <br/>
+                <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="jodoe@email.com" required />
+                <br/>
+                <label id="number-label" for="number">Number: <input id="number" type="number" placeholder="18" min="13" max="100" required />
+                <hr/>
+
+                <!-- dropdown -->
+                <label id="select-label" for="dropdown">Select one of these:
+                <select id="dropdown" required>
+                    <option>Select</option>
+                    <option>A</option>
+                    <option>B</option>
+                    </select>
+                </label>
+                <hr/>
+
+                <!-- radio buttons  -->
+                <label id="radio-label-one" for="radio-one"><input type="radio" id="radio-one" name="radio" value="one" required/>Radio One</label>
+                <br/>
+                <label id="radio-label-two" for="radio-two"><input type="radio" id="radio-two" name="radio" value="two" required/>Radio Two</label>
+                <hr/>
+
+                <!-- checkboxes -->
+                <label id="check-label-one" for="check-one"><input type="checkbox" id="check-one" value="1" required />Checkbox One</label>
+                <br/>
+                <label id="check-label-two" for="check-two"><input type="checkbox" id="check-two" value="2" required />Checkbox Two</label>
+                <hr/>
+
+                <!-- textarea -->
+                <textarea id="comments">Textarea</textarea>
+                <hr/>
+
+                <!-- submit -->
+                <label id="submit-label" for="submit"><input type="submit" id="submit" required /></label>
+
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
