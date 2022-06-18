@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    /* background-color: lightblue; */
+    background: url(https://vermontwoodsstudios.com/images/content/maple_wood_header.jpg);
+    color: #000;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+form {
+    margin: 0 auto 16px auto;
+}
+
+#head {
+    text-align: center;
+    margin: 16px auto;
+}
+
+form, #head {
+    background-color: lightgray;
+    border: 1px solid darkslategray;
+    border-radius: 32px;
+    width: 80%;
+    padding: 16px;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+input, textarea, select {
+    margin: 16px 0px 16px 0px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline;
+    width: unset;
+    margin: 16px;
+    vertical-align: middle;
+
+}
+
+input[type="submit"] {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}

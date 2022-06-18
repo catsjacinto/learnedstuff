@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="head">
+            <head>
+                <h1 id="title">Title</h1>
+                <p id="description">Form explanation</p>
+            </head>
+        </div>
+
+        <main>
+            <form id="survey-form">
+
+                <!-- NAME EMAIL NUMBER -->
+                <label id="name-label">Name: <input id="name" type="text" required placeholder="name" /></label>
+                
+                <br/>
+
+                <label id="email-label">Email: <input id="email" type="email" required placeholder="email" /></label>
+                
+                <br/>
+
+                <label id="number-label">Number: <input id="number" type="number" min="1" max="100" placeholder="1" /></label>
+                
+                <br/>
+
+                <!-- SELECT DROPDWON -->
+                <label>Select from these: 
+                    <select id="dropdown">
+                        <option value="first">First</option>
+                        <option value="second">Second</option>
+                    </select>
+                </label>
+
+                <br/>
+
+                <!-- RADIO BUTTONS -->
+                <label><input type="radio" name="radio" value="a" />Radio A</label>
+                
+                <br/>
+                
+                <label><input type="radio" name="radio" value="b" />Radio B</label>
+                
+                <br/>
+
+                <!-- CHECKBOXES -->
+                <label><input type="checkbox" value="1" name="check" />Check 1</label>
+                
+                <br/>
+                <label><input type="checkbox" value="2" name="check" />Check 2</label>
+                
+                <br/>
+
+                <!-- TEXTAREA -->
+                <label>Textarea: <textarea></textarea></label>
+                
+                <br/>
+
+                <!-- SUBMIT -->
+                <input type="submit" id="submit" />
+
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
