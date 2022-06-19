@@ -30,11 +30,12 @@ form, #head {
 input, textarea, select {
     margin: 16px 0px 16px 0px;
     width: 100%;
+    border-radius: 5px;
+    border: 1px solid darkslategray;
 }
 
 label {
     display: block;
-    font-weight: bold;
 }
 
 input[type="radio"], input[type="checkbox"] {
