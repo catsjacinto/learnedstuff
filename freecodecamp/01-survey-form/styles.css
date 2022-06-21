@@ -60,3 +60,10 @@ input[type="submit"] {
     height: 3em;
     color:hsl(19, 98%, 19%);
 }
+
+input[type="submit"]:hover {
+    border: 2px solid rgba(255, 255, 220, 0.9);
+    color:rgba(255, 255, 220, 0.9);
+    background-color: hsl(19, 98%, 19%);
+    cursor: pointer;
+}
