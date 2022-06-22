@@ -1,72 +1,104 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Survey Form Challenge</title>
+        <link rel="spreadsheet" href="styles.css"/>
+        <title>freeCodeCamp Survey Form Solution</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
+
     <body>
-        <div id="head">
-            <head>
-                <h1 id="title">Title</h1>
-                <p id="description">Form explanation</p>
-            </head>
-        </div>
+        <header>
+            <h1 id="title">Book Club Subscription Box</h1>
+            <p id="description">Fill out the information below and join our community. :)</p>
+        </header>
 
         <main>
             <form id="survey-form">
 
-                <!-- NAME EMAIL NUMBER -->
-                <label id="name-label">Name: <input id="name" type="text" required placeholder="name" /></label>
-                
+                <!-- personal information -->
+                <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="jo doe" required /></label>
+
+                <label id="number-label" for="number">Age: <input id="number" type="number" placeholder="18" min="13" max="100" required /></label>
+
+                <label id="address-label" for="address">Address: <input id="address" type="text" placeholder="street door city zipcode country" required /></label>
+
+                <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="jodoe@email.com" required /></label>
+
+                <label id="pass-label" for="pass">Password: <input id="pass" type="password" pattern="[A-Za-z0-9]{8,}" placeholder="min 8 letters and/or numbers" required /></label>
+
+                <!-- reading preferences -->
+
+                <!-- genres -->
+                <p id="genres">What genres do you like reading the most? (Select all that apply)</p>
+
+                <label id="fantasy-label" for="fantasy"><input type="checkbox" id="fantasy" value="fantasy" class="inline" required />Fantasy</label>
+
+                <label id="sci-fi-label" for="sci-fi"><input type="checkbox" id="sci-fi" value="sci-fi" class="inline" required />Sci-fi</label>
+
+                <label id="horror-label" for="horror"><input type="checkbox" id="horror" value="horror" class="inline" required />Horror</label>
+
+                <label id="romance-label" for="romance"><input type="checkbox" id="romance" value="romance" class="inline" required />Romance</label>
+
+                <label id="contemporary-label" for="contemporary"><input type="checkbox" id="contemporary" value="contemporary" class="inline" required />Contemporary</label>
+
+                <label id="comedy-label" for="comedy"><input type="checkbox" id="comedy" value="comedy" class="inline" required />Comedy</label>
+
+                <label id="non-fiction-label" for="non-fiction"><input type="checkbox" id="non-fiction" value="non-fiction" class="inline" required />Non-fiction</label>
+
                 <br/>
 
-                <label id="email-label">Email: <input id="email" type="email" required placeholder="email" /></label>
-                
+                <!-- demographics -->
+                <p id="demo">What demographics do you like reading the most? (Select all that apply)</p>
+
+                <label id="child-label" for="child"><input type="checkbox" id="child" value="child" class="inline" required />Children's</label>
+
+                <label id="midgrade-label" for="midgrade"><input type="checkbox" id="midgrade" value="midgrade" class="inline" required />Middle Grade</label>
+
+                <label id="ya-label" for="ya"><input type="checkbox" id="ya" value="ya" class="inline" required />Young Adult</label>
+
+                <label id="na-label" for="na"><input type="checkbox" id="na" value="na" class="inline" required />New Adult</label>
+
+                <label id="adult-label" for="adult"><input type="checkbox" id="adult" value="adult" class="inline" required />Adult</label>
+
                 <br/>
 
-                <label id="number-label">Number: <input id="number" type="number" min="1" max="100" placeholder="1" /></label>
-                
-                <br/>
+                <!-- subscription model -->
 
-                <!-- SELECT DROPDWON -->
-                <label>Select from these: 
-                    <select id="dropdown">
-                        <option value="first">First</option>
-                        <option value="second">Second</option>
+                <label id="select-label" for="dropdown">In what format do you prefer reading? (If you select both, you'll be charged for both models)
+
+                    <select id="dropdown" name="select-menu" required>
+                        <option value="">Select</option>
+                        <option value="physical">Physical</option>
+                        <option value="digital">Digital</option>
+                        <option value="both">Both</option>
                     </select>
+                </label>
+
+                <p id="radio-desc">Choose your subscripion model:</p>
+
+                <label id="week-label" for="week"><input type="radio" id="week" name="model" value="week" class="inline" required/>Weekly</label>
+
+                <label id="month-label" for="month"><input type="radio" id="month" name="model" value="month" class="inline" required/>Monthly</label>
+
+                <label id="quarter-label" for="quarter"><input type="radio" id="quarter" name="model" value="quarter" class="inline" required/>Quarterly</label>
+
+                <br/>
+
+                <!-- textarea -->
+                <label id="textarea-label" for="textarea">Anything else you want to add? <br/>
+                <textarea id="textarea" name="textarea" placeholder="write here" rows="3" cols="30">Place your comments and suggestions here!</textarea>
                 </label>
 
                 <br/>
 
-                <!-- RADIO BUTTONS -->
-                <label><input type="radio" name="radio" value="a" />Radio A</label>
-                
-                <br/>
-                
-                <label><input type="radio" name="radio" value="b" />Radio B</label>
-                
-                <br/>
-
-                <!-- CHECKBOXES -->
-                <label><input type="checkbox" value="1" name="check" />Check 1</label>
-                
-                <br/>
-                <label><input type="checkbox" value="2" name="check" />Check 2</label>
-                
-                <br/>
-
-                <!-- TEXTAREA -->
-                <label>Textarea: <textarea></textarea></label>
-                
-                <br/>
-
-                <!-- SUBMIT -->
-                <input type="submit" id="submit" value="submit" />
+                <!-- submit -->
+                <label id="submit-label" for="submit"><input type="submit" id="submit" value="subscribe" required /></label>
 
             </form>
+
         </main>
+
         <footer>
 
         </footer>
