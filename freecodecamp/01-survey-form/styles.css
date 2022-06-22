@@ -5,18 +5,19 @@ body {
 }
   
 header {
-    margin: auto;
-    width: 80%;
     text-align: center;
         border: 1px solid blue;
         background-color: lightblue;
 }
 
 form {
-    width: 80%;
-    margin: auto;
         border: 1px solid red;
         background-color: lightpink;
+}
+
+form, header {
+    width: 80%;
+    margin: auto;
 }
 
 label, .form-paragraph {
