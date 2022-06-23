@@ -43,7 +43,13 @@ input, textarea, select {
     width: unset;
 }
 
-
+fieldset {
+    border: none;
+}
+fieldset:not(:last-of-type) {
+    border-bottom: 2px solid black;
+    border-width: 30%;
+}
 
 footer {
     text-align: center;
