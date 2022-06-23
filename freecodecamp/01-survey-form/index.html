@@ -16,7 +16,7 @@
         <main>
             <form id="survey-form">
 
-                <!-- personal information -->
+                <!-- <fieldset id="personal"> -->
                 <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="jo doe" required /></label>
 
                 <label id="number-label" for="number">Age: <input id="number" type="number" placeholder="18" min="13" max="100" required /></label>
@@ -26,10 +26,13 @@
                 <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="jodoe@email.com" required /></label>
 
                 <label id="pass-label" for="pass">Password: <input id="pass" type="password" pattern="[A-Za-z0-9]{8,}" placeholder="min 8 letters and/or numbers" required /></label>
+                <!-- </fieldset> -->
+
+                <!-- <br/> -->
 
                 <!-- reading preferences -->
 
-                <!-- genres -->
+                <!-- <fieldset id="genres"> -->
                 <p class="form-paragraph">What genres do you like reading the most? (Select all that apply)</p>
 
                 <label id="fantasy-label" for="fantasy"><input type="checkbox" id="fantasy" value="fantasy" class="inline" required />Fantasy</label>
@@ -45,10 +48,11 @@
                 <label id="comedy-label" for="comedy"><input type="checkbox" id="comedy" value="comedy" class="inline" required />Comedy</label>
 
                 <label id="non-fiction-label" for="non-fiction"><input type="checkbox" id="non-fiction" value="non-fiction" class="inline" required />Non-fiction</label>
+                <!-- </fieldset> -->
 
-                <br/>
+                <!-- <br/> -->
 
-                <!-- demographics -->
+                <!-- <fieldset="demographics"> -->
                 <p class="form-paragraph">What demographics do you like reading the most? (Select all that apply)</p>
 
                 <label id="child-label" for="child"><input type="checkbox" id="child" value="child" class="inline" required />Children's</label>
@@ -60,10 +64,11 @@
                 <label id="na-label" for="na"><input type="checkbox" id="na" value="na" class="inline" required />New Adult</label>
 
                 <label id="adult-label" for="adult"><input type="checkbox" id="adult" value="adult" class="inline" required />Adult</label>
+                <!-- </fieldset> -->
                 
-                <br/>
+                <!-- <br/> -->
 
-                <!-- subscription model -->
+                <!-- <fieldset id="sub-model"> -->
                 <label id="select-label" for="dropdown">In what format do you prefer reading? (If you select both, you'll be charged for both models)
 
                     <select id="dropdown" name="select-menu" required>
@@ -81,15 +86,17 @@
                 <label id="month-label" for="month"><input type="radio" id="month" name="model" value="month" class="inline" required/>Monthly</label>
 
                 <label id="quarter-label" for="quarter"><input type="radio" id="quarter" name="model" value="quarter" class="inline" required/>Quarterly</label>
+                <!-- </fieldset> -->
                 
-                <br/>
+                <!-- <br/> -->
 
-                <!-- textarea -->
+                <!-- <fieldset="comments"> -->
                 <label id="textarea-label" for="textarea">Anything else you want to add? <br/>
                     <textarea id="textarea" name="textarea" placeholder="write here" rows="3" cols="30">Place your comments and suggestions here!</textarea>
                 </label>
+                <!-- </fieldset> -->
   
-                <br/>
+                <!-- <br/> -->
           
                 <!-- submit -->
                 <label id="submit-label" for="submit"><input type="submit" id="submit" value="subscribe" required /></label>
