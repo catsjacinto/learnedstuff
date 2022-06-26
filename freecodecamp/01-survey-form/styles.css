@@ -4,18 +4,14 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: sans-serif;
-        background-color: lightgoldenrodyellow;
-}
-  
-header {
-    text-align: center;
-        border: 1px solid blue;
-        background-color: lightblue;
+    background-image: url(pexels-ricardo-esquivel-1907785.jpg); 
+    background-size: contain;
+    background-blend-mode: luminosity;
+    background-color: white;
 }
 
-form {
-        border: 1px solid red;
-        background-color: lightpink;
+header {
+    text-align: center;
 }
 
 form, header {
@@ -24,18 +20,41 @@ form, header {
     max-width: 500px;
     margin: 2em auto;
     padding: 0 1em;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 5px black;
+    border: 3px solid white;
+    background-color: hsl(45, 60%, 80%, 0.9); 
 }
 
 label, .form-paragraph {
     display: block;
     margin: 1em auto;
-    width: 60%;
-        border: 1px solid green;
-        background-color: lightgreen;
+    width: 80%;
 }
 
 input, textarea, select {
     width: 100%;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+#submit {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    min-height: 2em;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
 }
 
 .inline {
@@ -43,12 +62,26 @@ input, textarea, select {
     width: unset;
 }
 
+a {
+    color: black;
+    box-shadow: 0px 0px 50px 5px rgba(247, 240, 217, 0.9) inset;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:visited {
+    color: gray;
+}
+
 fieldset {
     border: none;
 }
 fieldset:not(:last-of-type) {
     border-bottom: 2px solid black;
-    border-width: 30%;
 }
 
 footer {
